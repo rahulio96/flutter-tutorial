@@ -12,13 +12,16 @@ class HomePage extends StatelessWidget {
       appBar: appBar(),
       backgroundColor: Colors.white,
       body: Column(
-        children: searchField,
+        children: [
+          searchField(),
+          
+        ],
       ),
     );
   }
 
-  List<Widget> get searchField {
-    return [
+  Container searchField() {
+    return 
         Container(
           margin: EdgeInsets.only(top: 40, left: 20, right: 20),
           decoration: BoxDecoration(
@@ -78,8 +81,8 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-        )
-      ];
+        );
+
   }
 
   AppBar appBar() {
